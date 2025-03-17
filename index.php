@@ -1,11 +1,11 @@
 <?php
 include 'conexao.php';
 
-$sql = 'SELECT nome FROM pessoas';
-$result = $conn->query(sql);
 
-while ($row = $result->fetch_assoc()){
-    echo "<h1>" Nome: .htmlspecialchars($row['nome'])."</h1>";
+$sql = "SELECT nome FROM clientes";
+$result = $conn->query($sql);
+
+while ($row = $result-> fetch_assoc()){
+    echo "<h1> Nome: ".htmlspecialchars($row['nome'])."</h1>";
 }
-
 ?>
